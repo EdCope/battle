@@ -4,5 +4,11 @@ source "https://rubygems.org"
 
 ruby '3.0.0'
 
-gem "capybara"
-gem "selenium-webdriver"
+group :test do
+  gem "rspec"
+  gem "sinatra"
+  gem "sinatra-contrib"
+  gem "capybara"
+  gem "selenium-webdriver"
+
+end
