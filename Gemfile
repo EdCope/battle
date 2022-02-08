@@ -10,5 +10,6 @@ group :test do
   gem "sinatra-contrib"
   gem "capybara"
   gem "selenium-webdriver"
+  gem "launchy"
 
 end

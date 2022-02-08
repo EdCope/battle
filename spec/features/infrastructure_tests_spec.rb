@@ -21,12 +21,15 @@ describe "/names", type: :feature do
     expect(page).to have_selector(:link_or_button, "fight")
   end
 
-  xit 'allows a player to see their name once entered' do
+  it 'allows a player to see their name once entered' do
     visit '/'
     fill_in "player1", with: "Ed"
     fill_in "player2", with: "Eddie"
-    click_button "submit"
-    #expect(page).to have_
+    click_button "fight"
+
+    # save_and_open_page
+
+    expect(page).to have_content "Ed vs. Eddie"
   end
 
 end

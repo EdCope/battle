@@ -14,11 +14,15 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     diff-lcs (1.5.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
     matrix (0.4.2)
     mini_mime (1.1.2)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nokogiri (1.13.1-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.1-x86_64-darwin)
       racc (~> 1.4)
     public_suffix (4.0.6)
@@ -65,10 +69,12 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-darwin-20
 
 DEPENDENCIES
   capybara
+  launchy
   rspec
   selenium-webdriver
   sinatra
@@ -78,4 +84,4 @@ RUBY VERSION
    ruby 3.0.0p0
 
 BUNDLED WITH
-   2.3.6
+   2.3.5

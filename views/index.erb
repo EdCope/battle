@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body>"Hello BATTLE!"<br>
-Enter Player name 1 and Player name 2:
-
-<form>
-<input type="text" name="player1">
-<input type="text" name="player2">
-</form>
-<input type="submit" value="fight" >
-
-</body>
-
+  <head>
+  </head>
+  <body>
+    <h1>LETS  BATTLE!</h1>
+    <h2>Enter player_name_1 and player_name_2:</h2>
+    <form action ="/names" method ="post">
+      <label for="player1">
+        Player_1
+        <input type="text" name="player1">
+       </label><br>
+      <label for="player2">
+        Player_2
+        <input type="text" name="player2">
+        </label>
+      <input type="submit" value="fight" >
+    </form>
+  </body>
 </html>
