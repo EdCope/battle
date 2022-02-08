@@ -7,7 +7,7 @@ class Battle < Sinatra::Base
   end
 
   get '/' do
-    "Hello BATTLE!"
+    erb(:index)
   end
 
   # # Start the server if this file is executed directly (do not change the line below)
